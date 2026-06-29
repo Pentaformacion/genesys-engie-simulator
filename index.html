@@ -20,10 +20,137 @@
 </head>
 
 <body>
+  
+<!-- LOGIN -->
 
-<div id="app">
+<section id="login-screen">
 
-</div>
+    <div class="login-card">
+
+        <div class="logo">
+            ENGIE Training
+        </div>
+
+        <h1>Training Simulator</h1>
+
+        <input
+            id="userName"
+            type="text"
+            placeholder="Nombre del colaborador">
+
+        <div class="login-buttons">
+
+            <button
+                class="btn-primary"
+                onclick="login('advisor')">
+
+                Entrar como Asesor
+
+            </button>
+
+            <button
+                class="btn-secondary"
+                onclick="login('trainer')">
+
+                Entrar como Formador
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section
+    id="dashboard"
+    style="display:none;">
+
+    <!-- Barra superior -->
+
+    <header class="topbar">
+
+        <div class="top-left">
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="brand">
+
+                Training CX
+
+            </div>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Buscar...">
+
+            </div>
+
+        </div>
+
+        <div class="top-right">
+
+            <button><i class="fa-solid fa-phone"></i></button>
+
+            <button><i class="fa-regular fa-comments"></i></button>
+
+            <button><i class="fa-solid fa-inbox"></i></button>
+
+            <button><i class="fa-solid fa-users"></i></button>
+
+            <select id="status">
+
+                <option>Fuera de la cola</option>
+                <option>Disponible</option>
+                <option>Ocupado</option>
+                <option>Ausente</option>
+                <option>Descanso</option>
+
+            </select>
+
+            <div class="avatar">
+
+                JV
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Área principal -->
+
+    <main class="workspace">
+
+        <aside class="sidebar">
+
+        </aside>
+
+        <section class="conversation-list">
+
+        </section>
+
+        <section class="chat-panel">
+
+        </section>
+
+        <aside class="profile-panel">
+
+        </aside>
+
+    </main>
+
+</section>
 
 <script src="firebase.js"></script>
 <script src="app.js"></script>
